@@ -101,10 +101,10 @@ home_label = 'Education Search for 1500 + Online Degrees, Colleges & Universitie
 
 
 def is_not_home_page(soup):
-    shit = soup.find('div', id='shortdesc')
-    if shit is None:
+    mrkup = soup.find('div', id='shortdesc')
+    if mrkup is None:
         return None
-    return home_label not in shit.text
+    return home_label not in mrkup.text
 
 
 for state in states:
